@@ -1,4 +1,3 @@
-
 # =========== Unity Generated Files =============
 [Ll]ibrary/
 [Tt]emp/
@@ -8,7 +7,7 @@
 [Ll]ogs/
 [Mm]emoryCaptures/
 
-# Ignore Unity cache files
+# Ignore Unity cache and temporary files
 .DS_Store
 .idea/
 .vscode/
@@ -21,10 +20,10 @@
 *.log
 *.tmp
 
-# Ignore everything in Assets folder except for Scripts and Firebase
+# Ignore everything in Assets folder except for Scripts and Firebase scripts
 Assets/**
 !Assets/Scripts/**
-!Assets/Firebase/**
+!Assets/Firebase/*.cs
 
 # Exclude large binary files and other unneeded files
 *.apk
@@ -35,8 +34,5 @@ Assets/**
 *.dylib
 *.so
 
-# Firebase files (only allow Firebase scripts, not libraries)
-Assets/Firebase/Plugins/
-Assets/Firebase/Plugins/**
-Assets/Firebase/Plugins/x86_64/
-Assets/Firebase/Plugins/x86_64/**
+# Ignore UserSettings and other local files
+UserSettings/
